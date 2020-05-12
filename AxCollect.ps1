@@ -2,7 +2,6 @@
 # dwmetz@gmail.com   https://dwmetz.github.io/ @dwmetz
 # Once enabled sign in using investigator credentials to Axiom
 
-
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 $UserCredential = Get-Credential
 $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
