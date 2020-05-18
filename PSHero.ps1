@@ -17,7 +17,7 @@ function Show-Menu
     Write-Host "LO: O365 Admin Login"
     Write-Host "LE: O365 Admin Login [Modern Auth]"
     #Write-Host "LR: Remote PowerShell (alt user)"
-	#Write-Host "LN: Non-Attrib SSH"
+	Write-Host "LN: Non-Attrib SSH"
     Write-Host "=== Hosts ============================="-ForegroundColor darkgreen
     Write-Host "HB: Bitlocker Lookup"
     Write-Host "HG: Get Computer Info"
@@ -95,20 +95,11 @@ function Show-Menu
                 .\Get-KAPEUpdate.ps1
                 cd D:\PowerShell\Scripts
             }
-        'HM' {
-                D:\PowerShell\PSHero\Add2AVScan.ps1
-            }
 		'LN' {
                 D:\PowerShell\PSHero\NonAttribSSH.ps1
             }
 		'LR' {
                 D:\PowerShell\PSHero\PSession.ps1
-            }
-	    'DR' {
-                D:\PowerShell\PSHero\RoboKape.ps1
-            }
-	    'HW' {
-                D:\PowerShell\PSHero\TestWSMan.ps1
             }
 	    'ES' {
                 D:\PowerShell\PSHero\SadPhishes.ps1
@@ -148,7 +139,7 @@ function Show-Menu
             }
 
 		'x' {
-                D:\PowerShell\PSHero\irsa-x.ps1
+                D:\PowerShell\PSHero\PSHero.ps1
             }
 			
         'q' {
