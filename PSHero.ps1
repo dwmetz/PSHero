@@ -1,10 +1,9 @@
-﻿# PSHero Powershell Menu
-# (c)2020 github.com/dwmetz
-# All rights to 3rd party scripts remain with the original owners
-#
-# Note: do a find/replace for D:\PowerShell\PSHero\ and subsititute the path where PSHero scripts are locally stored
+﻿<# PSHero Powershell Menu v1.0
+https://github.com/dwmetz/PSHero/
+All rights to 3rd party scripts remain with the original owners
 
-
+Note: do a find/replace for D:\PowerShell\PSHero\ and subsititute the path where PSHero scripts are locally stored
+#>
 function Show-Menu
 {
     param (
