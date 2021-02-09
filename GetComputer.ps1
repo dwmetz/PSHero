@@ -2,5 +2,5 @@
 
 $script:computername = Read-Host -Prompt 'Enter the hostname'
 
-Get-ADComputer $script:computername -Properties * | Select Name, Description, LastLogonDate, OperatingSystem, CanonicalName, ManagedBy 
+Get-ADComputer $script:computername -Properties * | Select-Object Name, Description, LastLogonDate, OperatingSystem, CanonicalName, ManagedBy 
 
