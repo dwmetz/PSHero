@@ -1,24 +1,21 @@
 # PSHero
-Powershell scripts for DFIR and automation
 
-@dwmetz
-https://dwmetz.github.io/
+PSHero Powershell Menu v1.0
+https://github.com/dwmetz/PSHero/
+All rights to 3rd party scripts remain with the original owners
 
-Contents: 
+Note: do a find/replace for D:\PowerShell\PSHero\ and subsititute the path where PSHero scripts are locally stored
 
-18-May-2020
+We have a collection of internal scripts that we use frequently. As more scripts (or scriptlets) are added to the frequently used, I wanted a means to expose all the scripts to the team and to put some organization to it. I also wanted to easily support changes or additions to the referenced scripts. What I wound up building was a simple PowerShell menu structure.
 
-Added PSHero.ps1 - PSHERO POWERSHELL MENU
-* PSHero.ps1 and scripts related to PSHero should ideally be placed in the same directory. Be sure to update the paths in PSHero.ps1 to match to your local directory.
-* Always check the supplemental scripts to see if customization is necessary. 
+The scripts included in this demo menu include:
 
-
-15-May-2020
-
-* ADUserCredentialsCheck.ps1 - Script by Tim Buntrock - check user/pass from csv
-* AxCollect.ps1 - [O365] - grants an examiner read access to O365 mailbox
-* ChromeExtensions.ps1 - retreives the Google Chrome extensions and their ID's for a specified user
-* HostAlive.ps1 - get an auditory alert when a host comes online
-* SadPhishes.ps1 - [O365] Collin Edwards brilliant O365 search and destroy tool
-* UnixTime.ps1 - converts a unix time value to human readable
-
+- Launch PowerShell with an alternate credential
+- Login to O365, Legacy and Modern Auth.
+- Bitlocker (AD) retrieval
+- Host profiling and an attention getting PING
+- IRMemPull (Memory Acquisition) – https://github.com/n3l5/irMempull
+- A script that adds an examiner permissions to subject mailbox (for Magnet Axiom collection)
+- MX header parsing
+- Sadphishes – https://github.com/EdwardsCP/powershell-scripts/blob/master/SADPhishes.ps1
+- Convert Unix time to human readable
