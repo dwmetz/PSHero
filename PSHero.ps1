@@ -16,8 +16,6 @@ function Show-Menu
     Write-Host "LA: Alternate PS Login"
     Write-Host "LO: O365 Admin Login"
     Write-Host "LE: O365 Admin Login [Modern Auth]"
-    Write-Host "LR: Remote PowerShell (alt user)"
-	Write-Host "LN: Non-Attrib SSH"
     Write-Host "=== Hosts ============================="-ForegroundColor darkgreen
     Write-Host "HB: Bitlocker Lookup"
     Write-Host "HG: Get Computer Info"
@@ -49,12 +47,6 @@ function Show-Menu
             }
         'LE' {
                 D:\PowerShell\PSHero\Connect-ExchangeOnline.ps1
-            }
-        'LR' {
-                D:\PowerShell\PSHero\PSession.ps1
-            }
-    	'LN' {
-                D:\PowerShell\PSHero\NonAttribSSH.ps1
             }
         'HB' {
                 D:\PowerShell\PSHero\Bitlocker.ps1
