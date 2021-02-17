@@ -6,8 +6,11 @@ All rights to 3rd party scripts remain with the original owners
 
 Note: do a find/replace for D:\PowerShell\PSHero\ and subsititute the path where PSHero scripts are locally stored
 
+## Background
+
 We have a collection of internal scripts that we use frequently. As more scripts (or scriptlets) are added to the frequently used, I wanted a means to expose all the scripts to the team and to put some organization to it. I also wanted to easily support changes or additions to the referenced scripts. What I wound up building was a simple PowerShell menu structure.
 
+## Contents
 The scripts included in this demo menu include:
 
 - Launch PowerShell with an alternate credential
