@@ -1,6 +1,9 @@
-# This script enables investigator access to a users O365 mailbox.
-# dwmetz@gmail.com   https://dwmetz.github.io/ @dwmetz
-# Once enabled sign in using investigator credentials to Axiom
+<# AxCollect.ps1
+dwmetz@gmail.com   https://dwmetz.github.io/ @dwmetz
+
+This script enables investigator access to a users O365 mailbox.
+Script shoud be run by Exchange Administrator to grant mailbox delegation permissions.
+Once enabled sign in using investigator credentials to Axiom. #>
 
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 $UserCredential = Get-Credential
