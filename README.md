@@ -1,4 +1,12 @@
-# PSHero
+<div align="center">
+ <img style="padding:0;vertical-align:bottom;" height="158" width="311" src="BSF.png"/>
+ <p>
+  <h1>
+   PSHero
+  </h1>
+ </p>
+
+</div>
 
 PSHero Powershell Menu v1.0
 https://github.com/dwmetz/PSHero/
