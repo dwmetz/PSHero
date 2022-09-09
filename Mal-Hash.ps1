@@ -37,4 +37,4 @@ Get-ChildItem -Filter 'malhash*' -Recurse | Rename-Item -NewName {$_.name -repla
 Write-host ""
 Write-host "Displaying results. Details are saved in malhash.$tstamp.txt"
 Write-host ""
-Start-Sleep 10
+Start-Sleep -Seconds 10
