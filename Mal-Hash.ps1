@@ -1,5 +1,5 @@
 <#
-MAL-HASH.ps1 v1.0
+Mal-Hash.ps1 v1.0
 https://github.com/dwmetz/PSHero
 Author: @dwmetz
 
