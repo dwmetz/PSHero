@@ -1,6 +1,6 @@
-﻿<# 
-
-This script will generate a Security and Compliance Search to capture OneDrive for a list of custodians.
+﻿<# MS-OneDriveSearch.ps1
+https://github.com/dwmetz/Axiom-PowerShell
+Function: This script will generate a Security and Compliance Search to capture OneDrive for a list of custodians.
 
 This PowerShell script will prompt you for the following information:
     * Your user credentials                                          
@@ -12,13 +12,11 @@ This PowerShell script will prompt you for the following information:
     * Create and start a Content Search using the above information
 
 #>
-
 # Get user credentials
 if (!$credentials)
 {
     $credentials = Get-Credential
 }
-
 # Get other required information
 $inputfile = read-host "Enter the file name of the text file that contains the email addresses for the users you want to search"
 $searchName = Read-Host "Enter the name for the new search"
@@ -36,30 +34,22 @@ if (!$s -or !$a)
     }
 }
 Write-Host "Getting each user's OneDrive for Business URL"
-
 $urls = @()
-
 foreach($emailAddress in $emailAddresses)
 {
     $OneDriveURL = Get-OneDriveUrl -userPrincipalName $emailAddress
-
     if ($null -ne $OneDriveURL){
         $urls += $OneDriveURL
         Write-Host "-$emailAddress => $OneDriveURL"
     } else {
         Write-Warning "Could not locate OneDrive for $emailAddress"
     }
-
 }
 Write-Host "Creating and starting the search"
-
 $search = New-ComplianceSearch -Name $searchName -ExchangeLocation $emailAddresses -SharePointLocation $urls -ContentMatchQuery $searchQuery
-
 # Finally, start the search and then display the status
-
 if($search)
 {
     Start-ComplianceSearch $search.Name
     Get-ComplianceSearch $search.Name
 } 
-
