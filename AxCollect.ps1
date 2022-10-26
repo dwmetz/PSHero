@@ -9,7 +9,7 @@ Function:
 
 25.October.2022 - update ExchangeOnlineManagement connection
 
-#>#>
+#>
 Import-module ExchangeOnlineManagement
 Connect-ExchangeOnline
 $script:axiom_o365 = Read-Host -Prompt 'Enter the used ID of the target (ex.Alice)'
