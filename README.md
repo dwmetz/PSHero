@@ -26,6 +26,7 @@ The scripts included in this demo menu include:
 - Bitlocker (AD) retrieval
 - Host profiling and an attention getting PING
 - IRMemPull (Memory Acquisition) – https://github.com/n3l5/irMempull
+- Submit MD5 to VirusTotal via API
 - A script that adds an examiner permissions to subject mailbox (for Magnet Axiom collection)
 - MX header parsing
 - Sadphishes – https://github.com/EdwardsCP/powershell-scripts/blob/master/SADPhishes.ps1
