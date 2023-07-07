@@ -1,5 +1,5 @@
 <#
-Mal-Hash.ps1 v1.4
+Mal-Hash.ps1 v1.5
 https://github.com/dwmetz/Mal-Hash
 Author: @dwmetz
 Function: This script will generate hashes (MD5, SHA1, SHA256) for a specified file, 
@@ -21,7 +21,7 @@ Clear-Host
 Write-Host ""
 Write-Host ""
 Write-Host ""
-Write-host -Fore Cyan "
+Write-host -Fore DarkCyan "
     .',;::cccccc:;.                         ...'''''''..'.  
    .;ccclllloooddxc.                   .';clooddoolcc::;:;. 
    .:ccclllloooddxo.               .,coxxxxxdl:,'..         
@@ -36,7 +36,7 @@ Write-host -Fore Cyan "
        .';:clooddddolc:,..                                  
            ''''''''''                                                                                                                 
 "                
-Write-Host -Fore Cyan "                    Mal-Hash v1.4" 
+Write-Host -Fore DarkCyan "                    Mal-Hash v1.5" 
 Write-Host -Fore Gray "          https://github.com/dwmetz/Mal-Hash"
 Write-Host -Fore Gray "          @dwmetz | bakerstreetforensics.com"
 Write-Host ""
