@@ -42,7 +42,7 @@ Write-Host -Fore Gray "          @dwmetz | bakerstreetforensics.com"
 Write-Host ""
 Write-Host ""
 write-host " "
-$tstamp = (Get-Date -Format "yyyy-MM-dd-HH-mm")
+$tstamp = (Get-Date -Format "yyyyMMddHHmm")
 $script:file = Read-Host -Prompt 'enter path and filename'
 write-host " "
 $sourcefile = [system.IO.Path]::GetFileName("$script:file")
@@ -85,5 +85,10 @@ $vtResults.scans | Out-File -FilePath malhash.-t.txt -Append
 "** END REPORT **" | Out-File -FilePath malhash.-t.txt -Append
 $report = $sourcefile + "." + $tstamp
 Get-ChildItem -Filter 'malhash*' -Recurse | Rename-Item -NewName {$_.name -replace '-t', $report }
+Write-host " "
+Write-host $vtResults.positives of $vtResults.total vendors detected this sample.
+Write-host " "
+Write-host -Fore Green "VT Results Permalink:"
+Write-host $vtResults.Permalink
 Write-host " "
 Write-host "Mal-Hash complete. Report saved as malhash.$report.txt" -Fore Cyan
